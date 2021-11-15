@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="sudheer28.css">
+        <script>
+        function validate()
+            {
+                if(isNaN(frm.phone.value))
+                {
+                    alert("invalid phone number");
+                    return false;
+                }
+                if((frm.phone.value).length<10)
+                    {
+                        return false;
+                    }
+            }
+    </script>
+    <style>
+        *
+{
+    margin:0;
+    padding:0;
+}
+body
+{
+    background-color: black;
+}
+div input[type="text"],div input[type="email"]
+{
+    background:none;
+	display:block;
+	margin:20px auto;
+    border:3px solid darkorange;
+    padding:14px 40px;
+    text-align: center;
+    border-radius: 15px;
+    outline:none;
+    background-color: aliceblue;
+}
+div input[type="submit"]
+{
+    background:none;
+	display:block;
+	margin:2px auto;
+	text-align:center;
+	border:4px solid darkorange;
+	padding:10px 40px;
+    text-align: center;
+    outline:none;
+    color:aliceblue;
+    border-radius: 25px;
+    background-color: darkorange;
+}
+div
+{
+    width:300px;
+	padding:40px;
+	position:absolute;
+    top:22%;
+    left:35%;
+    background-color:dimgrey;
+    border-top-left-radius:30px;
+    border-bottom-right-radius:30px;
+    border: 2px solid aliceblue;
+}
+div p
+{
+    text-align: center;
+    color:aliceblue;
+    font-family:Gautami;
+    font-size: 30px;
+}
+div input[type="submit"]:hover
+{
+	background:darkorange;
+    box-shadow: 1px 1.881px 20px aliceblue;
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            <form onsubmit="validate()" action="OnMobRec.html" name="frm">
+                <p>Registration</p>
+                <input type="text" placeholder="Phone Number" name="phone" required>
+                <input type="email" placeholder="Email" required>
+                <input type="submit" onclick="Login()" value="Register">
+            </form>
+        </div>
+    </body>
+</html>
